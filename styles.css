@@ -21,7 +21,6 @@ header {
   justify-content: space-around;
   align-items: center;
   position: sticky;
-  width: 100%;
   height: 90px;
   border-bottom: 1px solid black;
   background-color: #fffffff5;
@@ -82,7 +81,7 @@ li:hover {
 
 main {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -94,13 +93,13 @@ span {
 
 h2 {
   color: var(--black);
-  margin: 2rem 0rem 2rem 6rem;
-  width: 100%;
+    padding: 2rem 0rem 2rem 6rem;
+    width: 100%;
 }
 
 @media (max-width: 920px) {
   h2 {
-    margin: 1rem;
+    padding: 1rem;
     text-align: center;
   }  
 }
@@ -110,7 +109,7 @@ h2 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
-  width: 1280px;
+  max-width: 1280px;
   padding: 0rem 2rem 0rem 2rem;
   margin-bottom: 2rem;
 }
@@ -126,7 +125,6 @@ h2 {
 
 .card img{
   border-radius: 12px;
-  
 }
 
 .card img:hover {
